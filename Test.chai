@@ -1,0 +1,38 @@
+puts(hello("Brian"));
+
+def sumUpTo(n)
+{
+	var s = 0;
+	for (var i = 1; i <= n; ++i)
+	{
+		s += i;
+	}
+	print(s);
+}
+
+def retSum(n)
+{
+	var s = 0;
+	for (var i = 1; i <= n; ++i)
+	{
+		s += i;
+	}
+	return s;
+}
+
+def callMemberFun(obj, x)
+{
+	return obj.sum(x);
+}
+
+def factorial(N)
+{
+	if (N <= 1 )
+	{
+		return 1;
+	}
+	else
+	{
+		return N * factorial(N - 1);
+	}
+}
